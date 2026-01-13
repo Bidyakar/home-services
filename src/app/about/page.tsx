@@ -5,7 +5,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-20 px-6">
+      <div className="bg-gradient-to-b from-[#000001]  to-[#340063] text-white py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
             About ServiceHub
@@ -140,7 +140,7 @@ export default function AboutPage() {
       </div>
 
       {/* Stats Section */}
-      <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 py-16">
+      <div className="bg-gradient-to-b from-[#000001]  to-[#340063] py-16">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">Our Impact</h2>
@@ -224,7 +224,7 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <div className="w-20 h-20 bg-gradient-to-b from-[#000001]  to-[#340063] rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-4xl">✓</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Verified Professionals</h3>
@@ -234,7 +234,7 @@ export default function AboutPage() {
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <div className="w-20 h-20 bg-gradient-to-b from-[#000001]  to-[#340063] rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-4xl">💰</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Transparent Pricing</h3>
@@ -244,7 +244,7 @@ export default function AboutPage() {
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <div className="w-20 h-20 bg-gradient-to-b from-[#000001]  to-[#340063] rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-4xl">🛡️</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Satisfaction Guarantee</h3>
@@ -257,7 +257,7 @@ export default function AboutPage() {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 py-16 px-6">
+      <div className="bg-gradient-to-b from-[#340063]  to-[#000001] py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Get Started?
