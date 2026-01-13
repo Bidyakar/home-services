@@ -1,20 +1,29 @@
 "use client"; // Footer has interactive links/icons
 
+import Link from "next/link";
+
 export default function Footer() {
+  // Declare resources here, outside JSX
+  const resources = [
+    { name: "Company", href: "/company" },
+    { name: "Blogs", href: "/blogs" },
+    { name: "Community", href: "/community" },
+    { name: "Careers", href: "/careers" },
+    { name: "About", href: "/about" },
+  ];
+
   return (
-    <footer className="flex flex-wrap justify-center lg:justify-between overflow-hidden gap-10 md:gap-20 py-16 px-6 md:px-16 lg:px-24 xl:px-32 text-[13px] text-gray-500 bg-gradient-to-b from [#000001]  to-[#340063] font-poppins">
+    <footer className="flex flex-wrap justify-center lg:justify-between overflow-hidden gap-10 md:gap-20 py-16 px-6 md:px-16 lg:px-24 xl:px-32 text-[13px] text-gray-500 bg-gradient-to-b from-[#000001] to-[#340063] font-poppins">
       {/* Logo + Links */}
       <div className="flex flex-wrap items-start gap-10 md:gap-[60px] xl:gap-[140px]">
         {/* Logo */}
-        
         <a href="/">
-         <span className="relative top-15 left-4 text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-  ServiceHub
-</span>
-
+          <span className="relative top-15 left-4 text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+            ServiceHub
+          </span>
         </a>
 
-        {/* Links */}
+        {/* Product Links */}
         <div>
           <p className="text-slate-100 font-semibold">Product</p>
           <ul className="mt-2 space-y-2">
@@ -28,26 +37,30 @@ export default function Footer() {
           </ul>
         </div>
 
+        {/* Resources Links */}
         <div>
           <p className="text-slate-100 font-semibold">Resources</p>
           <ul className="mt-2 space-y-2">
-            {["Company", "Blogs", "Community", "Careers", "About"].map(
-              (link) => (
-                <li key={link} className="flex items-center gap-1">
-                  <a href="/" className="hover:text-indigo-600 transition">
-                    {link}
-                  </a>
-                  {link === "Careers" && (
-                    <span className="text-xs text-white bg-indigo-600 rounded-md px-2 py-1">
-                      We’re hiring!
-                    </span>
-                  )}
-                </li>
-              )
-            )}
+            {resources.map((resource) => (
+              <li key={resource.name} className="flex items-center gap-1">
+                <Link
+                  href={resource.href}
+                  className="hover:text-indigo-600 transition"
+                >
+                  {resource.name}
+                </Link>
+
+                {resource.name === "Careers" && (
+                  <span className="text-xs text-white bg-indigo-600 rounded-md px-2 py-1">
+                    We’re hiring!
+                  </span>
+                )}
+              </li>
+            ))}
           </ul>
         </div>
 
+        {/* Legal Links */}
         <div>
           <p className="text-slate-100 font-semibold">Legal</p>
           <ul className="mt-2 space-y-2">

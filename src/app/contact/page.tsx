@@ -1,112 +1,160 @@
-const Page = () => {
-    return(
-        <section className="bg-blue-50 dark:bg-slate-800" id="contact">
-    <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-        <div className="mb-4">
-            <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
-                <p className="text-base font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-200">
-                    Contact
-                </p>
-                <h2
-                    className="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl">
-                    Get in Touch
-                </h2>
-                <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">In hac habitasse platea
-                    dictumst
-                </p>
-            </div>
-        </div>
-        <div className="flex items-stretch justify-center">
-            <div className="grid md:grid-cols-2">
-                <div className="h-full pr-6">
-                    <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
-                        Class aptent taciti sociosqu ad
-                        litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque
-                        sagittis ante, ac tincidunt sem venenatis ut.
-                    </p>
-                    <ul className="mb-6 md:mb-0">
-                        <li className="flex">
-                            <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" className="h-6 w-6">
-                                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
-                                    <path
-                                        d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div className="ml-4 mb-4">
-                                <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Our Address
-                                </h3>
-                                <p className="text-gray-600 dark:text-slate-400">1230 Maecenas Street Donec Road</p>
-                                <p className="text-gray-600 dark:text-slate-400">New York, EEUU</p>
-                            </div>
-                        </li>
-                        <li className="flex">
-                            <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" className="h-6 w-6">
-                                    <path
-                                        d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
-                                    </path>
-                                    <path d="M15 7a2 2 0 0 1 2 2"></path>
-                                    <path d="M15 3a6 6 0 0 1 6 6"></path>
-                                </svg>
-                            </div>
-                            <div className="ml-4 mb-4">
-                                <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Contact
-                                </h3>
-                                <p className="text-gray-600 dark:text-slate-400">Mobile: +1 (123) 456-7890</p>
-                                <p className="text-gray-600 dark:text-slate-400">Mail: tailnext@gmail.com</p>
-                            </div>
-                        </li>
-                        <li className="flex">
-                            <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" className="h-6 w-6">
-                                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
-                                    <path d="M12 7v5l3 3"></path>
-                                </svg>
-                            </div>
-                            <div className="ml-4 mb-4">
-                                <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Working
-                                    hours</h3>
-                                <p className="text-gray-600 dark:text-slate-400">Monday - Friday: 08:00 - 17:00</p>
-                                <p className="text-gray-600 dark:text-slate-400">Saturday &amp; Sunday: 08:00 - 12:00</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
-                    <h2 className="mb-4 text-2xl font-bold dark:text-white">Ready to Get Started?</h2>
-                    <form id="contactForm">
-                        <div className="mb-6">
-                            <div className="mx-0 mb-1 sm:mb-4">
-                                <div className="mx-0 mb-1 sm:mb-4">
-                                    <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" placeholder="Your name" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="name" />
-                                </div>
-                                <div className="mx-0 mb-1 sm:mb-4">
-                                    <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email" />
-                                </div>
-                            </div>
-                            <div className="mx-0 mb-1 sm:mb-4">
-                                <label htmlFor="textarea" className="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea" name="textarea" placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
-                            </div>
-                        </div>
-                        <div className="text-center">
-                            <button type="submit" className="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-    )
-    
-}
+import { ChevronDownIcon } from '@heroicons/react/24/solid';
 
-export default Page;
+export default function Example() {
+  return (
+    <div className="isolate bg-gray-900 px-6 py-24 sm:py-32 lg:px-8">
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+      >
+        <div
+          style={{
+            clipPath:
+              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+          }}
+          className="relative left-1/2 -z-10 aspect-1155/678 w-144.5 max-w-none -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-40rem)] sm:w-288.75"
+        />
+      </div>
+      <div className="mx-auto max-w-2xl text-center">
+        <h2 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">Contact sales</h2>
+        <p className="mt-2 text-lg/8 text-gray-400">Aute magna irure deserunt veniam aliqua magna enim voluptate.</p>
+      </div>
+      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div>
+            <label htmlFor="first-name" className="block text-sm/6 font-semibold text-white">
+              First name
+            </label>
+            <div className="mt-2.5">
+              <input
+                id="first-name"
+                name="first-name"
+                type="text"
+                autoComplete="given-name"
+                className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+              />
+            </div>
+          </div>
+          <div>
+            <label htmlFor="last-name" className="block text-sm/6 font-semibold text-white">
+              Last name
+            </label>
+            <div className="mt-2.5">
+              <input
+                id="last-name"
+                name="last-name"
+                type="text"
+                autoComplete="family-name"
+                className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <label htmlFor="company" className="block text-sm/6 font-semibold text-white">
+              Company
+            </label>
+            <div className="mt-2.5">
+              <input
+                id="company"
+                name="company"
+                type="text"
+                autoComplete="organization"
+                className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <label htmlFor="email" className="block text-sm/6 font-semibold text-white">
+              Email
+            </label>
+            <div className="mt-2.5">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autoComplete="email"
+                className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <label htmlFor="phone-number" className="block text-sm/6 font-semibold text-white">
+              Phone number
+            </label>
+            <div className="mt-2.5">
+              <div className="flex rounded-md bg-white/5 outline-1 -outline-offset-1 outline-white/10 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-500">
+                <div className="grid shrink-0 grid-cols-1 focus-within:relative">
+                  <select
+                    id="country"
+                    name="country"
+                    autoComplete="country"
+                    aria-label="Country"
+                    className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-transparent py-2 pr-7 pl-3.5 text-base text-gray-400 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6"
+                  >
+                    <option>US</option>
+                    <option>CA</option>
+                    <option>EU</option>
+                  </select>
+                  <ChevronDownIcon
+                    aria-hidden="true"
+                    className="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-400 sm:size-4"
+                  />
+                </div>
+                <input
+                  id="phone-number"
+                  name="phone-number"
+                  type="text"
+                  placeholder="123-456-7890"
+                  className="block min-w-0 grow bg-transparent py-1.5 pr-3 pl-1 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <label htmlFor="message" className="block text-sm/6 font-semibold text-white">
+              Message
+            </label>
+            <div className="mt-2.5">
+              <textarea
+                id="message"
+                name="message"
+                rows={4}
+                className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+                defaultValue={''}
+              />
+            </div>
+          </div>
+          <div className="flex gap-x-4 sm:col-span-2">
+            <div className="flex h-6 items-center">
+              <div className="group relative inline-flex w-8 shrink-0 rounded-full bg-white/5 p-px inset-ring inset-ring-white/10 outline-offset-2 outline-indigo-500 transition-colors duration-200 ease-in-out has-checked:bg-indigo-500 has-focus-visible:outline-2">
+                <span className="size-4 rounded-full bg-white shadow-xs ring-1 ring-gray-900/5 transition-transform duration-200 ease-in-out group-has-checked:translate-x-3.5" />
+                <input
+                  id="agree-to-policies"
+                  name="agree-to-policies"
+                  type="checkbox"
+                  aria-label="Agree to policies"
+                  className="absolute inset-0 size-full appearance-none focus:outline-hidden"
+                />
+              </div>
+            </div>
+            <label htmlFor="agree-to-policies" className="text-sm/6 text-gray-400">
+              By selecting this, you agree to our{' '}
+              <a href="#" className="font-semibold whitespace-nowrap text-indigo-400">
+                privacy policy
+              </a>
+              .
+            </label>
+          </div>
+        </div>
+        <div className="mt-10">
+          <button
+            type="submit"
+            className="block w-full rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+          >
+            Let's talk
+          </button>
+        </div>
+      </form>
+    </div>
+  )
+}
