@@ -5,6 +5,13 @@ import { useState } from "react";
 export default function CareersPage() {
   const [selectedDepartment, setSelectedDepartment] = useState("all");
 
+  const scrollToOpenings = () => {
+    const element = document.getElementById('openings');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const jobOpenings = [
     {
       id: 1,
@@ -201,7 +208,7 @@ export default function CareersPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
-                onClick={() => document.getElementById('openings').scrollIntoView({ behavior: 'smooth' })}
+                onClick={scrollToOpenings}
                 className="px-8 py-3 bg-white text-indigo-600 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
               >
                 View Open Positions
