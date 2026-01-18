@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="sticky top-0 z-50 backdrop-blur-md bg-gradient-to-b from-[#000001] to-[#340063] shadow-sm">
+      <nav className="sticky top-0 z-50 backdrop-blur-md bg-gradient-to-b from-[#000001] to-[#340063] shadow-sm rounded-b-4xl mt-4 md:mt-3 lg:mt-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
 
