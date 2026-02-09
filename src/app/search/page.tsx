@@ -1,12 +1,12 @@
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { Search, MapPin, Star, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { servicesData } from "@/data/servicesData";
 
-export default function SearchPage() {
+function SearchContent() {
     const searchParams = useSearchParams();
     const query = (searchParams.get("q") || "").toLowerCase();
 
@@ -37,7 +37,7 @@ export default function SearchPage() {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Header Section */}
-            <div className="bg-gradient-to-r from-[#000001] to-[#340063] text-white py-16 px-6">
+            <div className="bg-gradient-to-r from-[#000001] to-[#191146] text-white py-16 px-6">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex items-center gap-4 mb-4">
                         <div className="bg-white/10 p-3 rounded-2xl backdrop-blur-md">
@@ -124,5 +124,13 @@ export default function SearchPage() {
                 )}
             </div>
         </div>
+    );
+}
+
+export default function SearchPage() {
+    return (
+        <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+            <SearchContent />
+        </Suspense>
     );
 }
