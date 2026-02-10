@@ -33,23 +33,7 @@ export default function LoginPage() {
           {/* Logo and Header */}
           <div>
             <Link href="/" className="flex items-center justify-center gap-2 mb-8">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#000001] to-[#191146] rounded-xl flex items-center justify-center">
-                <svg
-                  width="28"
-                  height="28"
-                  viewBox="0 0 31 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m8.75 11.3 6.75 3.884 6.75-3.885M8.75 34.58v-7.755L2 22.939m27 0-6.75 3.885v7.754M2.405 15.408 15.5 22.954l13.095-7.546M15.5 38V22.939M29 28.915V16.962a2.98 2.98 0 0 0-1.5-2.585L17 8.4a3.01 3.01 0 0 0-3 0L3.5 14.377A3 3 0 0 0 2 16.962v11.953A2.98 2.98 0 0 0 3.5 31.5L14 37.477a3.01 3.01 0 0 0 3 0L27.5 31.5a3 3 0 0 0 1.5-2.585"
-                    stroke="white"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
+
               <span className="text-2xl font-bold bg-gradient-to-r from-[#000001] to-[#191146] bg-clip-text text-transparent">
                 ServiceHub
               </span>
