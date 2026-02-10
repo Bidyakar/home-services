@@ -257,24 +257,24 @@ export default function AboutPage() {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gradient-to-b from-[#191146]  to-[#000001] py-16 px-6">
+      <div className="bg-gradient-to-b from-gray-100 to-gray-200 py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-xl text-indigo-100 mb-8">
+          <p className="text-xl text-black mb-8">
             Join thousands of satisfied customers who trust ServiceHub for their home service needs
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/services"
-              className="px-8 py-4 bg-white text-indigo-600 font-bold rounded-full hover:bg-gray-100 transition transform hover:-translate-y-1 shadow-lg"
+              className="px-8 py-4 bg-gradient-to-b from-[#000001]  to-[#191146] text-white font-bold rounded-full hover:bg-gray-100 transition transform hover:-translate-y-1 shadow-lg"
             >
               Browse Services
             </Link>
             <Link
               href="/contact"
-              className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white/10 transition transform hover:-translate-y-1"
+              className="px-8 py-4 bg-transparent border-2 border-gray-900 text-black font-bold rounded-full hover:bg-gray-900/10 transition transform hover:-translate-y-1"
             >
               Contact Us
             </Link>

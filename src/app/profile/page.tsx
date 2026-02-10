@@ -47,16 +47,30 @@ export default function ProfilePage() {
     useEffect(() => {
         async function fetchUser() {
             const userData = await getCurrentUser();
-            setUser(userData);
+            if (userData) {
+                setUser(userData);
+            }
             setLoading(false);
         }
         fetchUser();
-    }, [infoState, avatarStatus]);
+    }, [infoState]); // Only re-fetch on profile info update (which redirects anyway) or mount
 
     const handleAvatarSelect = async (avatarUrl: string) => {
+        if (!user) return;
+
+        // Optimistic update
+        const previousAvatar = user.avatar;
+        setUser({ ...user, avatar: avatarUrl });
+
         startTransition(async () => {
             const result = await updateUserAvatar(avatarUrl);
-            setAvatarStatus(result);
+            if (result.error) {
+                // Rollback on error
+                setUser({ ...user, avatar: previousAvatar });
+                setAvatarStatus(result);
+            } else {
+                setAvatarStatus(result);
+            }
             setTimeout(() => setAvatarStatus(null), 3000);
         });
     };
